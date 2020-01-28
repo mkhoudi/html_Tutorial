@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>outofflow</title>
+    <style>
+      *{margin:0px;padding:0px;font-size:99px;color:white;}
+
+      .parent{
+        width:856px;background:grey;
+        border-bottom:15px solid blue;
+        border-top:15px solid black;  
+      }
+
+      .item{width:200px;height:300px;background:orange;
+            margin:2px;
+            border:5px red solid;
+            float:left;
+      }
+      .clear-both {
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="item">item DIV</div>
+      <div class="clear-both"></div>
+    </div>
+  </body>
+</html>
