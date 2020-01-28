@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Text Style</title>
+    <link rel="shortcut icon" href="html5.ico" type="image/x-icon">
+    <style>
+      #div1, #div2 {
+        float: left; width: 280px; height: 180px; margin: 10px; padding: 10px;
+          border: 1px solid #aaaaaa;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="tizi.jpg" draggable="true" ondragstart="return dragInitialize(event)" width="250" height="150" id="drag1"> 
+    <script type="text/javascript" >
+      function dragInitialize(ev) {
+        ev.dataTransfer.effectAllowed='move';
+        ev.dataTransfer.setData("text", ev.target.getAttribute('id'));
+        return true;
+      }
+
+      <!-- add the following draggable attributes to first div -->
+
+    <img src="tizi.jpg" draggable="true" ondragstart="return dragInitialize(event)" width="250"
+          height="150" id="drag1"/>
+    </script>
+  </body>
+</html>
+
+
